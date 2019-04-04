@@ -34,6 +34,10 @@ class TodosController < ApplicationController
 		end
 	end 
 
+	def index
+		@todos = Todo.all 
+	end 
+
 	# anything below "private" is only available in this file
 	private
 
